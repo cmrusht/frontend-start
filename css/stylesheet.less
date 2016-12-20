@@ -13,10 +13,14 @@ table, caption, tbody, tfoot, thead, tr, th, td, header, main, footer {
     background: transparent;
 }
 
+@outer-background-color-lighter: #f2f2f2;
+@outer-background-color: #e8e8e8;
+@outer-background-color-darker: #d6d6d6;
 @orange-light: #E3BA72;
 @orange-norm: #DCA94F;
 @orange-dark: #F6AB31;
-@grey: #EEE;
+@link-unvisited: #57B3DF; //#0093C6;
+@link-visited: #0099CC; //#0071b8;
 
 
 html{
@@ -24,14 +28,48 @@ html{
 }
 
 body {
-    background-color: @grey;
+    background-color: @outer-background-color-lighter;
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 
+p {
+    padding: 8px 0 8px 0;
+}
+a, a:active, a:focus {
+outline: none;
+}
+/* unvisited link */
+a:link {
+    color: @link-unvisited;
+    text-decoration: none;
+}
+/* visited link */
+a:visited {
+    color: @link-visited;
+    text-decoration: none;
+}
+/* mouse over link */
+a:hover {
+    color: @link-unvisited;
+    text-decoration: underline;
+}
+/* selected link */
+a:active {
+    color: @link-visited;
+    text-decoration: underline;
+}
+ul {
+    list-style: circle;
+}
+li {
+    
+}
+
 #boxed { 
     width: 70%;
+    box-shadow: 0 0 7px @outer-background-color-darker;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -41,6 +79,7 @@ body {
 #header { 
     background-color: @orange-dark;
     flex: 0 0 auto;
+    height: 150px;
 }
 
 #content {
@@ -48,7 +87,15 @@ body {
     flex: 1 0 auto;
 }
 
+#inner_content {
+    padding: 20px 50px;
+}
+
 #footer {
     background-color: purple;
+    color: @outer-background-color-lighter;
     flex: 0 0 auto;
+    text-align: center;
+    padding: 30px 10px;
+    font-size: 22px;
 }
