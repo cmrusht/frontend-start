@@ -165,8 +165,7 @@ a:active {
   border: 1px solid #d6d6d6;
 }
 #logo_top {
-  margin: 10px 30px 10px 0;
-  margin-left: 7.5%;
+  margin: 10px 30px 10px 7.5%;
   height: 40px;
   order: 1;
 }
@@ -211,16 +210,15 @@ a:active {
   margin-right: auto;
   display: block;
   width: 85%;
-  overflow: hidden;
   border-radius: 2px;
 }
 #snippet_sidebar {
   background-color: #0099cc;
   border: 1px solid #0071a1;
-  width: 27%;
+  min-width: 200px;
+  max-width: 200px;
   padding: 20px;
   white-space: nowrap;
-  overflow: hidden;
 }
 #snippet_sidebar .code_list {
   padding-left: 25px;
@@ -229,11 +227,14 @@ a:active {
   padding-left: 25px;
   padding-bottom: 18px;
 }
+#snippet_sidebar_mobile {
+  display: none;
+}
 #inner_content {
   background-color: #fff;
   border: 1px solid #d6d6d6;
   padding: 20px 50px;
-  width: 73%;
+  width: 100%;
 }
 #footer {
   background-color: purple;
@@ -246,25 +247,34 @@ a:active {
 @media (max-width: 1050px) {
   #header {
     flex-direction: column;
-    padding-left: 0;
+    /* Center according to the main axis */
+    justify-content: center;
+    /* Center according to the secondary axis */
+    align-items: center;
   }
   #logo_top {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    height: auto;
+    height: 30px;
+    margin: 0 0 15px 0;
   }
   .menu-nav-basic {
-    width: 100%;
-    justify-content: center;
+    text-align: center;
   }
 }
 @media (max-width: 720px) {
   .menu-nav-basic .nav a {
     font-size: 10px;
   }
+  main {
+    display: block;
+  }
+  #snippet_sidebar {
+    display: none;
+  }
+  #snippet_sidebar_mobile {
+    display: block;
+  }
   #inner_content {
-    clear: both;
+    width: 100%;
   }
 }
 @media (max-width: 565px) {
@@ -273,5 +283,6 @@ a:active {
   }
   #menu-nav-mobile {
     display: block;
+    width: 100%;
   }
 }
