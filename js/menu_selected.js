@@ -1,16 +1,13 @@
 function menuselect(host){
 	let tab = host.split("/");
-	let size = tab.length;
+	
+  let tab_stripped = tab[2].split(".");
   
-	if (size < 3) {
-		$("#navbar_home").siblings().removeClass('selected');
-		$("#navbar_home").addClass('selected');
-	}
-	else {
-		$("#navbar_" + tab[size-2]).siblings().removeClass('selected');
-		$("#navbar_" + tab[size-2]).addClass('selected');
-		document.getElementById('menu-navigation-mobile').value = '/' + tab[size-2];
-	}
+  
+  $("#navbar_" + tab_stripped[0]).siblings().removeClass('selected');
+  $("#navbar_" + tab_stripped[0]).addClass('selected');
+  document.getElementById('menu-nav-mobile').value = tab[2];
+
 	
 }
 
