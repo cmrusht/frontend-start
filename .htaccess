@@ -1,8 +1,0 @@
-RewriteEngine On    # Turn on the rewriting engine
-# Adding trailing / to add pages
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.*[^/])$ /$1/ [L,R=301]
-
-# Setting up rewrite rules
-RewriteRule    ^snippets/?$    snippets.php    [NC,L]
-RewriteRule    ^placeholder/?$    index.html    [NC,L]
