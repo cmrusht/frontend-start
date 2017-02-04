@@ -11,11 +11,16 @@
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
 
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   
   <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
   
+  <script src="highlight/highlight.pack.js"></script>
+  <link href="highlight/styles/default.css" rel="stylesheet" type="text/css">
+
   <!-- Bootstrap Flex -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap-flex.min.css" rel="stylesheet" >
 
@@ -50,7 +55,7 @@
         <ul class="code_list">
           <li>HTML Snippets</li>
           <ul class="code_list_ind">
-            <li>HTML 1</li>
+            <li id="htmlclick1" title="snippet_test.json">HTML 1</li>
             <li>HTML 2</li>
             <li>HTML 3</li>
           </ul>
@@ -59,7 +64,7 @@
         <ul class="code_list">  
           <li>JS Snippets</li>
           <ul class="code_list_ind">
-            <li>JS 1</li>
+            <li id="jsclick1" title="snippet_test_js.json">JS 1</li>
             <li>JS 2</li>
             <li>JS 3</li>
           </ul>
@@ -81,8 +86,15 @@
 
         "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
         1914 translation by H. Rackham
-
         </p>
+        <div id="snippet_code">
+          <div id="snippet_title">
+          </div>
+          <div id="snippet_desc">
+          </div>
+          <div id="snippet_code_ele">
+          </div>
+        </div>
       </div>
     </main>
   </div>
@@ -100,5 +112,8 @@
   </footer>
   <script src="js/menu_selected.js" type="text/javascript"></script>
   <script src="js/eventHandlers.js" type="text/javascript"></script>
+  <script src="js/snippet_json_handler.js" type="text/javascript"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>

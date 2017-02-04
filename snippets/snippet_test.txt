@@ -1,0 +1,6 @@
+  &lt;header&gt;	
+    &lt;h1&gt;Example HTML&lt;/h1&gt;
+  &lt;/header&gt;
+  &lt;main class="style"&gt;
+    &lt;p&gt;Some text&lt;/p&gt;
+  &lt;/main&gt;
