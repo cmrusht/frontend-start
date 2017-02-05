@@ -1,6 +1,10 @@
 { 
-"Title":"Test Snippet", 
-"Description":"This is a test json file for my first snippet, so I can see it working",  
-"Language":"language-html", 
-"codesnippetfile":"snippets/snippet_test.txt" 
+"Title":"HTML SNIPPET 2 TEST", 
+"SnippetArray":[
+    {
+        "Description":"This is the first snippet, it is currently just a demo and will have content soon",  
+	    "Language":"language-html", 
+        "codesnippetfile":"snippets/snippet_test.txt" 
+    }
+]
 }

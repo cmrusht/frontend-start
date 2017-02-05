@@ -1,0 +1,20 @@
+{ 
+"Title":"Javascript SNIPPET 2 TEST", 
+"SnippetArray":[
+         {
+            "Description":"This is the first javascript snippet, it is currently just a demo and will have content soon",  
+	    "Language":"language-javascript", 
+            "codesnippetfile":"snippets/snippet_test_js_2.txt" 
+         }, 
+	 {
+            "Description":"This is the second javascript snippet, it is currently just a demo and will have content soon",  
+	    "Language":"language-javascript", 
+            "codesnippetfile":"snippets/snippet_test_js_22.txt" 
+         }, 
+	 {
+            "Description":"This is the third javascript snippet, it is currently just a demo and will have content soon",  
+	    "Language":"language-javascript", 
+            "codesnippetfile":"snippets/snippet_test_js_2.txt" 
+         }
+]
+}
