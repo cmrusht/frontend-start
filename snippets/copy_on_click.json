@@ -1,0 +1,15 @@
+{ 
+"Title":"Copy On Click", 
+"SnippetArray":[
+         {
+            "Description":"An awesome accessibility feature you can add to your website is the ability to copy strings directly via button press. This interaction can be applied to quickly grab URLs, long strings such as SSH keys, terminal commands, hex colors, or any other data that is frequently copy & pasted.</br></br>To make this happen we will need to use a cool JavaScript method called execCommand(). It allows us to invoke a number of different events that manipulate editable content such as making text bold/italic, doing undo/redo, and also copy/cut/paste.",  
+	        "Language":"language-javascript", 
+            "codesnippetfile":"snippets/copy_on_click1.txt" 
+         },
+         {
+            "Description":"This works exactly like pressing CTRL/Cmd+C on your keyboard, so in order to copy any text we first need to have it selected. This is possible in JavaScript thanks to the Selection API, which allows us to programatically make a text selection from any HTML element on the page.",  
+	        "Language":"language-javascript", 
+            "codesnippetfile":"snippets/copy_on_click2.txt" 
+         }
+]
+}

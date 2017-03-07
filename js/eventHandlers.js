@@ -9,16 +9,8 @@
     event.preventDefault(); // disables default form submission
     return false; // prevents further "bubbling" up of event
   }
-  /*function loadjsonfile() {
-    alert("hey");
-    readJSON("../snippets/snippet_test.json");
 
-    event.preventDefault(); // disables default form submission
-    return false; // prevents further "bubbling" up of event
-  }*/
-
- // menu_mobile.addEventListener("change", menudropdownlink);
-  htmlclick1.addEventListener("click", loadjsonfile);
+  menu_mobile.addEventListener("change", menudropdownlink);
   
 }());
 // the final brackets () make the anonymous function execute immediately

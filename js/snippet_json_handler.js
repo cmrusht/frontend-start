@@ -43,7 +43,7 @@ function readTXT(file, i) {
   {
 
     document.getElementById("snippet_desc").innerHTML += "<p>"+file[i].Description+"</p>";
-    document.getElementById("snippet_desc").innerHTML += "<pre><code class="+file[i].Language+">"+this.responseText+"</code></pre>";
+    document.getElementById("snippet_desc").innerHTML += "<pre class='code_snip'><code class="+file[i].Language+">"+this.responseText+"</code></pre>";
 
 
     $(document).ready(function() {

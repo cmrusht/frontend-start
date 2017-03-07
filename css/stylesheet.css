@@ -233,6 +233,7 @@ a:active {
 }
 #snippet_sidebar li {
   background-color: #0071a1;
+  color: black;
   border: 1.4px solid #005b81;
   padding-left: 20px;
   padding-bottom: 10px;
@@ -272,6 +273,9 @@ a:active {
 }
 #snippet_sidebar_mobile {
   display: none;
+}
+.code_snip {
+  padding: 10px 0 10px 0;
 }
 #inner_content {
   background-color: #fff;
