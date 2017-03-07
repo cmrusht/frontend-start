@@ -1,0 +1,17 @@
+  &lt;table style="width:100%"&gt;
+    &lt;tr&gt;
+      &lt;th&gtFirstname&lt/th&gt;
+      &lt;th&gtLastname&lt/th&gt;
+      &lt;th&gtAge&lt/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gtJill&lt/td&gt;
+      &lt;td>Smith&lt/td&gt;
+      &lt;td&gt50&lt/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gtEve&lt/td&gt;
+      &lt;td&gtJackson&lt/td&gt;
+      &lt;td&gt94&lt/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;

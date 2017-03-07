@@ -1,0 +1,17 @@
+  .container{
+    display: flex;
+  }
+
+  /* Reverse the order of elements */
+
+  .blue{
+    order: 3;
+  }
+
+  .red{
+    order: 2;
+  }
+
+  .green{
+    order: 1;
+  }

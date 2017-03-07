@@ -1,0 +1,9 @@
+ .container{
+    display: flex;
+
+    /* Center according to the main axis */
+    justify-content: center;
+
+    /* Center according to the secondary axis */
+    align-items: center;
+  }

@@ -1,0 +1,30 @@
+{ 
+"Title":"Flexbox Techniques", 
+"SnippetArray":[
+         {
+            "Description":"This may not seem like a difficult task at first, but making columns that have the same height can be really annoying. Simply setting min-height won’t work, because once the amount of content in the columns starts to differ, some of them will grow and others will remain shorter.</br></br>Fixing this issue using flexbox couldn’t be easier, as columns created this way have equal heights by default. All we have to do is initialize the flex model, then make sure the flex-direction and align-items properties have their default values.",  
+	        "Language":"language-css", 
+            "codesnippetfile":"snippets/flexbox_techniques1.txt" 
+         },
+         {
+            "Description":"A while ago, if we had to dynamically change the order of some elements, we would probably try some CSS hack, quit in frustration, and go do it with JavaScript. With flexbox however, this task comes down to applying a single CSS property.</br></br>It’s called order and just like its name everything about it as straightforward as possible. It allows us to swap any number of flex items and change the sequence in which they appear on the screen. It’s only parameter is an integer determining the position of that element – lower numbers mean bigger priority.",  
+	        "Language":"language-css", 
+            "codesnippetfile":"snippets/flexbox_techniques2.txt" 
+         },
+         {
+            "Description":"Vertical centering in CSS is one of those problems that makes us ask ourselves: How is such a trivial thing still so complicated to do? And it really is. If you google vertical centering CSS, an infinite amount of different techniques will pop up, and most of them will involve tables or transforms – things that aren’t designed for making layouts.</br></br>Flexbox offers an easier solution to the problem. Every flex layout has two directions (X axis and Y axis) and two separate properties for their alignment. By centering both we can position any element right in the middle of its parent container.",  
+	        "Language":"language-css", 
+            "codesnippetfile":"snippets/flexbox_techniques3.txt" 
+         },
+         {
+            "Description":"Most developers rely on a CSS frameworks when creating responsive grids. Bootstrap is the most popular one but there are hundreds of libraries that can help you with this task. They usually work well and have tons of options, but tend to be quite heavy. If you are a DIY person or don’t want to implement a whole framework just for the grid, flexbox has you covered!</br></br>A row in the flexbox grid is simply a container with display:flex. The horizontal columns inside it can be any amount of elements, setting the size of which is done via flex. The flex model adapts to the viewport size, so this setup should look fine on all devices. However, if we decide there isn’t enough space horizontally on the screen, we can easily turn the layout into a vertical one with a media-query.",  
+	        "Language":"language-css", 
+            "codesnippetfile":"snippets/flexbox_techniques4.txt" 
+         },
+         {
+            "Description":"Flexbox has an easy solution to that problem as well. When building pages that include a sticky footer, by doing the whole thing in flex elements we can be sure that our footer will always stay at the bottom of the page.</br></br>Applying display: flex to the body tag allows us to construct our entire page layout using flex mode properties. Once that’s done the main content of the website can be one flex item and the footer another, which makes it really easy to manipulate their positioning and place them exactly where we want.",  
+	        "Language":"language-css", 
+            "codesnippetfile":"snippets/flexbox_techniques5.txt" 
+         }
+]
+}

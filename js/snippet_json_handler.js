@@ -69,6 +69,8 @@ let htmlclick1 = document.getElementById("htmlclick1");
 let jsclick1 = document.getElementById("jsclick1");
 let jsclick2 = document.getElementById("jsclick2");
 
+let cssclick1 = document.getElementById("cssclick1");
+
 function loadjsonfile(file) {
   readJSON("snippets/" + file);
 
@@ -80,3 +82,5 @@ htmlclick1.addEventListener("click", function(){ loadjsonfile(htmlclick1.title);
 
 jsclick1.addEventListener("click", function(){ loadjsonfile(jsclick1.title); });
 jsclick2.addEventListener("click", function(){ loadjsonfile(jsclick2.title); });
+
+cssclick1.addEventListener("click", function(){ loadjsonfile(cssclick1.title); });
