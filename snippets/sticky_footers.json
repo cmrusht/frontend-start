@@ -1,0 +1,20 @@
+{
+"Title":"Sticky Footers", 
+"SnippetArray":[
+         {
+            "Description":"To prevent the above from happening we will be building our page using flexbox, the most advanced tool CSS3 has to offer for building adaptive layouts. For those of you not familiar with the flexbox model and its properties, we will leave a couple of links at the end of the article.</br></br>Our simple demo page will have a header, main section, and a footer. Here is the HTML, nothing extraordinary there.",  
+	        "Language":"language-html", 
+            "codesnippetfile":"snippets/sticky_footer1.txt" 
+         },
+         {
+            "Description":"To enable the flex model we add display: flex to the body, and change the direction to column (the default is row, which is a horizontal layout). Also, the html and body will need 100% height to fill up the whole screen.",  
+	        "Language":"language-css", 
+            "codesnippetfile":"snippets/sticky_footer2.txt" 
+         },
+         {
+            "Description":"Now we need to adjust how much space each section will take up. We’ve done this via the flex property, which bundles together three flex- specs into one:</br></br>flex-grow –  Defines how much of the available free space in the container goes to an element.</br>flex-shrink – How much an element will shrink when there isn’t enough space for everything.</br>flex-basis – The default size for an element.</br></br>We want our header and footer to take up just as much space as they need, and everything else to be reserved for the main content section. The CSS for such layout looks like this:",  
+	        "Language":"language-css", 
+            "codesnippetfile":"snippets/sticky_footer3.txt" 
+         }
+]
+}

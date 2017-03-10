@@ -1,0 +1,5 @@
+  &lt;body&gt;
+    &lt;header&gt;...&lt;/header&gt;
+    &lt;section class="main-content"&gt;...&lt;/section&gt;
+    &lt;footer&gt;...&lt;/footer&gt;
+  &lt;/body&gt;

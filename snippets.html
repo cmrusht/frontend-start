@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <!-- Title -->
   <title>Front End Project</title>
+  <!-- Used for mobile scaling -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <!-- Latest compiled and minified CSS -->
@@ -11,23 +13,31 @@
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
 
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   
-  <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
-  
+  <!-- Highlight, is used to create code highlighting -->
+  <script src="highlight/highlight.pack.js"></script>
+  <link href="highlight/styles/default.css" rel="stylesheet" type="text/css">
+
   <!-- Bootstrap Flex -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap-flex.min.css" rel="stylesheet" >
 
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   
+  <!-- Stylesheet Link -->
   <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 
 <body>
-  <!-- <div id="boxed"> -->
+  <!-- Header -->
   <header id="header">
+    <!-- Logo -->
     <img id="logo_top" src="images/logo/logo_codesnippets.png" alt="Logo" />
+
+    <!-- Navbar -->
     <nav class="menu-nav-basic">
       <ul class="nav">
         <li><a id="navbar_index" href="index.html">Home</a></li>
@@ -35,6 +45,7 @@
         <li><a id="navbar_placeholder" href="index.html">Placeholder</a></li>
       </ul>
     </nav>
+    <!-- Mobile Navbar -->
     <select id="menu-nav-mobile">
       <option id="navbar_mobile_home" value="index.html">Home</option>
       <option id="navbar_mobile_snippets" value="snippets.html">Snippets</option>
@@ -43,22 +54,65 @@
   </header>	
     
 
-    
-    <div id="content">
-      <main>
-        <div id="inner_content">
-          <h1>CONTENT</h1>
-        </div>
-      </main>
-    </div>
-    
+  <!-- Main Content -->
+  <div id="content">
+    <main>
+      <!-- Sidebar -->
+      <div id="snippet_sidebar">
+        <h4 class="title">Snippets</h4>
+        <ul class="code_list">
+          <li>HTML Snippets</li>
+          <ul class="code_list_ind">
+            <li id="htmlclick1" title="table_example.json">Table Example</li>
+          </ul>
+        </ul>
 
-    <footer>
-      <div id="footer">
-        © 2017 - Chris Rushton
+        <ul class="code_list">  
+          <li>JS Snippets</li>
+          <ul class="code_list_ind">
+            <li id="jsclick1" title="copy_on_click.json">Copy on click</li>
+          </ul>
+        </ul>
+        <ul class="code_list">  
+          <li>CSS Snippets</li>
+          <ul class="code_list_ind">
+            <li id="cssclick1" title="flexbox_techniques.json">Flexbox Tech</li>
+            <li id="cssclick2" title="sticky_footers.json">Sticky Footers</li>
+          </ul>
+        </ul>
       </div>
-    </footer>
+      <!-- Default Content Display -->
+      <div id="inner_content">
+        <div id="face_page">
+          <h1>Snippets</h1>
+          <li>This snippets website is designed so that any reusable and handy code segments can be put onto their own page, to be reused again in the future.</li>
+          <li>It uses json and ajax to dynamically load each file into this page.</li>
+          <li>The main content container uses flexbox to push the footer to the bottom and always be displaying to the bottom of the page.</li>
+          <li>The stylesheet is made using LESS, so that we can use variables to represent colors, making it easier to change the style of the site in the future.</li>
+        </div>
+        <!-- Containers to insert snippers into -->
+        <div id="snippet_code">
+          <div id="snippet_title">
+          </div>
+          <div id="snippet_desc">
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  
+  <!-- Small copyright footer -->
+  <footer id="myFooter">
+    <div class="contain">
+      <p class="footer-copyright">© 2017 CodeSnippets</p>
+    </div>
+  </footer>
+  <!-- Importing event handlers -->
   <script src="js/menu_selected.js" type="text/javascript"></script>
   <script src="js/eventHandlers.js" type="text/javascript"></script>
+  <script src="js/snippet_json_handler.js" type="text/javascript"></script>
+  
+  <!-- Execute the highlight JS -->
+  <script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>

@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <!-- Title -->
   <title>Front End Project</title>
+  <!-- Used for mobile scaling -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <!-- Latest compiled and minified CSS -->
@@ -11,13 +13,12 @@
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
 
-
+  <!-- JQuery -->
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   
-  <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
-  
+  <!-- Highlight, is used to create code highlighting -->
   <script src="highlight/highlight.pack.js"></script>
   <link href="highlight/styles/default.css" rel="stylesheet" type="text/css">
 
@@ -26,13 +27,17 @@
 
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   
+  <!-- Stylesheet Link -->
   <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 
 <body>
-  <!-- <div id="boxed"> -->
+  <!-- Header -->
   <header id="header">
+    <!-- Logo -->
     <img id="logo_top" src="images/logo/logo_codesnippets.png" alt="Logo" />
+
+    <!-- Navbar -->
     <nav class="menu-nav-basic">
       <ul class="nav">
         <li><a id="navbar_index" href="index.html">Home</a></li>
@@ -40,6 +45,7 @@
         <li><a id="navbar_placeholder" href="index.html">Placeholder</a></li>
       </ul>
     </nav>
+    <!-- Mobile Navbar -->
     <select id="menu-nav-mobile">
       <option id="navbar_mobile_home" value="index.html">Home</option>
       <option id="navbar_mobile_snippets" value="snippets.html">Snippets</option>
@@ -48,47 +54,17 @@
   </header>	
     
 
+  <!-- Main Content -->
   <div id="content">
     <main>
-      <div id="snippet_sidebar">
-        <h4 class="title">Snippets</h4>
-        <ul class="code_list">
-          <li>HTML Snippets</li>
-          <ul class="code_list_ind">
-            <li id="htmlclick1" title="table_example.json">Table Example</li>
-            <li>HTML 2</li>
-            <li>HTML 3</li>
-          </ul>
-        </ul>
-
-        <ul class="code_list">  
-          <li>JS Snippets</li>
-          <ul class="code_list_ind">
-            <li id="jsclick1" title="copy_on_click.json">Copy on click</li>
-            <li id="jsclick2" title="snippet_test_js_2.json">JS 2</li>
-            <li>JS 3</li>
-          </ul>
-        </ul>
-        <ul class="code_list">  
-          <li>CSS Snippets</li>
-          <ul class="code_list_ind">
-            <li id="cssclick1" title="flexbox_techniques.json">Flexbox Techniques</li>
-            <li>CSS 2</li>
-          </ul>
-        </ul>
-      </div>
+      <!-- Default Content Display -->
       <div id="inner_content">
         <div id="face_page">
-          <h1>Snippets</h1>
-          <p>The standard Lorem Ipsum passage, used since the 1500s
-
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-          Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
-
-          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-          1914 translation by H. Rackham
-          </p>
+          <p><b>This site, is designed to keep a repository of all useful code snippets, that I find or design as I progress. The repository will keep getting bigger.</b></p>
+          <p>Bit of Page Fill</p>
+          <p>The standard Lorem Ipsum passage, used since the 1500s "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?" 1914 translation by H. Rackham </p>
         </div>
+        <!-- Containers to insert snippers into -->
         <div id="snippet_code">
           <div id="snippet_title">
           </div>
@@ -99,21 +75,17 @@
     </main>
   </div>
   
+  <!-- Small copyright footer -->
   <footer id="myFooter">
     <div class="contain">
-      <ul>
-        <li><a href="#">Placeholder</a></li>
-        <li><a href="#">Placeholder</a></li>
-        <li><a href="#">Placeholder</a></li>
-        <li><a href="#">Placeholder</a></li>
-      </ul>
-    <p class="footer-copyright">© 2017 CodeSnippets</p>
+      <p class="footer-copyright">© 2017 CodeSnippets</p>
     </div>
   </footer>
+  <!-- Importing event handlers -->
   <script src="js/menu_selected.js" type="text/javascript"></script>
   <script src="js/eventHandlers.js" type="text/javascript"></script>
-  <script src="js/snippet_json_handler.js" type="text/javascript"></script>
   
+  <!-- Execute the highlight JS -->
   <script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>

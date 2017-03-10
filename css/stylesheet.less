@@ -13,6 +13,7 @@ table, caption, tbody, tfoot, thead, tr, th, td, header, main, footer {
     background: transparent;
 }
 
+/* Setup colour scheme to variables */
 @outer-background-color-lighter: #f2f2f2;
 @outer-background-color: #e8e8e8;
 @outer-background-color-darker: #d6d6d6;
@@ -29,7 +30,7 @@ table, caption, tbody, tfoot, thead, tr, th, td, header, main, footer {
 @nav-unselected: #809098;
 @nav-selected: #435762;
 
-
+// Styling headings
 h1 {
     font-size: 40px;
     line-height: 50px;
@@ -74,7 +75,7 @@ h6 {
 }
 
 
-
+// Quick function to display center
 #displaycenter() {
     margin-left: auto;
     margin-right: auto;
@@ -124,15 +125,7 @@ a:active {
     text-decoration: underline;
 }
 
-#boxed { 
-    width: 70%;
-    box-shadow: 0 0 7px @outer-background-color-darker;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
+// Displaying header using flex ordering for mobile rearrangement
 #header { 
     background-color: #fff;
     flex: 0 0 auto;
@@ -142,11 +135,13 @@ a:active {
     width: 100%;
     border: 1px solid @outer-background-color-darker;
 }
+// Logo
 #logo_top {
     margin: 10px 30px 10px 7.5%;
     height: 40px;
     order: 1;
 }
+// Navigation
 .menu-nav-basic {
     width: 700px;
     order: 2;
@@ -192,6 +187,7 @@ a:active {
     border-radius: 2px;
 }
 
+// Sidebar
 #snippet_sidebar {
     background-color: @blue-norm;
     border: 1px solid @blue-dark;
@@ -295,6 +291,7 @@ a:active {
     line-height: 2;
 }
 
+// Media resizing for mobile applications
 @media(max-width: 1050px) {
     #header {
         flex-direction: column;
@@ -311,6 +308,7 @@ a:active {
         text-align: center;
     }
 }
+// Smaller media resizing
 @media(max-width: 720px) {
     .menu-nav-basic .nav a {
         font-size: 10px;
@@ -337,7 +335,7 @@ a:active {
         width: 100%;
     }   
 }
-@media(max-width: 575px) {
+@media(max-width: 625px) {
     .menu-nav-basic {
          display: none; 
     }
