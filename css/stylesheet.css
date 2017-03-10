@@ -354,11 +354,10 @@ a:active {
     display: block;
     width: 100%;
   }
-  #snippet_sidebar {
-    display: none;
-  }
-  #snippet_sidebar_mobile {
+  #snippet_sidebar .code_list {
     display: block;
     width: 100%;
+    margin-right: 0;
+    vertical-align: top;
   }
 }
