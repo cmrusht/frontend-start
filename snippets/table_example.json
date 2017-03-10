@@ -4,7 +4,7 @@
          {
             "Description":"An HTML table is defined with the <b>&lt;table&gt;</b> tag.</br></br>Each table row is defined with the <b>&lt;tr&gt;</b> tag. A table header is defined with the <b>&lt;th&gt;</b> tag. By default, table headings are bold and centered. A table data/cell is defined with the <b>&lt;td&gt;</b> tag.",  
 	        "Language":"language-html", // Language of the snippet
-            "codesnippetfile":"snippets/table_example.txt"  // Location of the snippet
+            "codesnippetfile":"snippets/table_example1.txt"  // Location of the snippet
          }
 ]
 }
